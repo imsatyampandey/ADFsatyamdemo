@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/imp/blobs/orignal/demo.txt",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/dbda8b01-6aab-48c4-b253-2e1297b6cbe1/resourceGroups/satyamtesting/providers/Microsoft.Storage/storageAccounts/storagedemosatyam",
+			"events": [
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "tevent",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "variablespipline",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"filename": "@triggerBody.fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/imp/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/dbda8b01-6aab-48c4-b253-2e1297b6cbe1/resourceGroups/satyamtesting/providers/Microsoft.Storage/storageAccounts/storagedemosatyam",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
