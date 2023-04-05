@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFsatyamdemo"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"Salesforce1_password": {
+			"value": ""
+		},
+		"Salesforce1_securityToken": {
+			"value": ""
+		},
+		"SatyamDBOnPrem_connectionString": {
+			"value": ""
+		},
+		"SqlServerlinkedservice_connectionString": {
+			"value": ""
+		},
+		"onPremLinked_connectionString": {
+			"value": ""
+		},
+		"Salesforce1_properties_typeProperties_environmentUrl": {
+			"value": "https://login.salesforce.com"
+		},
+		"Salesforce1_properties_typeProperties_username": {
+			"value": "fasd"
+		},
+		"tevent_properties_variablespipline_parameters_filename": {
+			"value": "@triggerBody.fileName"
+		},
+		"tevent_properties_typeProperties_scope": {
+			"value": "/subscriptions/dbda8b01-6aab-48c4-b253-2e1297b6cbe1/resourceGroups/satyamtesting/providers/Microsoft.Storage/storageAccounts/storagedemosatyam"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/dbda8b01-6aab-48c4-b253-2e1297b6cbe1/resourceGroups/satyamtesting/providers/Microsoft.Storage/storageAccounts/storagedemosatyam"
+		}
+	}
+}
