@@ -10,7 +10,7 @@
 				"typeProperties": {
 					"variableName": "filename",
 					"value": {
-						"value": "@replace(pipeline().parameters.filename,'sales',\")",
+						"value": "sales",
 						"type": "Expression"
 					}
 				}
